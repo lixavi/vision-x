@@ -33,3 +33,10 @@ class VideoProcessor:
             if output_path:
                 out.write(frame)
 
+            if cv2.waitKey(1) & 0xFF == ord('q'):
+                break
+
+        cap.release()
+        if output_path:
+            out.release()
+        cv2.destroyAllWindows()
