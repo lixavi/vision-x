@@ -24,17 +24,7 @@ class VideoProcessor:
                 break
 
             # Perform object detection
-            boxes, classes, scores = self.object_detector.detect_objects(frame)
-            # Draw detection results on the frame
-            self.object_detector.draw_detections(frame, boxes, classes, scores)
 
-            # Display the frame
-            cv2.imshow('Object Detection', frame)
-            if output_path:
-                out.write(frame)
-
-            if cv2.waitKey(1) & 0xFF == ord('q'):
-                break
 
         cap.release()
         if output_path:
