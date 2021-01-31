@@ -5,7 +5,6 @@ def main():
     model_path = 'data/pretrained_models/model.pb'
     labels_path = 'data/pretrained_models/labels.txt'
 
-
     # Process image
     image_path = 'data/images/sample.jpg'
     output_image_path = 'output/sample_output.jpg'
