@@ -33,6 +33,3 @@ class VideoProcessor:
             if output_path:
                 out.write(frame)
 
-            if cv2.waitKey(1) & 0xFF == ord('q'):
-                break
-
