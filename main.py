@@ -1,3 +1,9 @@
+from src.processing.video_processor import VideoProcessor
+from src.processing.image_processor import ImageProcessor
+
+def main():
+    model_path = 'data/pretrained_models/model.pb'
+    labels_path = 'data/pretrained_models/labels.txt'
 
     # Process video
     video_path = 'data/videos/sample.mp4'
