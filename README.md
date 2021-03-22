@@ -15,4 +15,9 @@ VisionX is a Python-based real-time object detection system that harnesses the p
 - TensorFlow
 - OpenCV
 
+You can customize the project by:
+
+- Training your own object detection model.
+- Adding support for different object detection frameworks.
+- Extending functionalities for specific use cases.
 
