@@ -1,12 +1,3 @@
-import numpy as np
-import tensorflow as tf
-import cv2
-
-class ObjectDetector:
-    def __init__(self, model_path, labels_path):
-        self.model = tf.saved_model.load(model_path)
-        self.labels = self.load_labels(labels_path)
-        self.detect_fn = self.model.signatures['serving_default']
 
     def load_labels(self, labels_path):
         with open(labels_path, 'r') as f:
