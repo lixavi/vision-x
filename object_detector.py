@@ -9,5 +9,4 @@ class ObjectDetector:
     def detect_objects(self, image):
         input_tensor = tf.convert_to_tensor(image)
         detections = self.detect_fn(input_tensor)
-        # Process detections
         return detections
